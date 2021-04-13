@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="af0b3682146fcaa621e492070044da2b"></script>
+    <script src="1565966b63abe1bb79bada1b8460582f"></script>
+    <script src="cb72937fc0861b5b7ab7d27f90347add"></script>
+    <script src="fcc427f60447652ad3daa0b1bd77b2e4"></script>
+    <title>Info 474 Week 3</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script src="6b4bdb555d7e3a8d549ded548e319b64"></script>
+    <div id="view"></div>
+
+    <script data-parcel-key="9d65f411081b9fe8fe64d25c22adb563">
+      // setup API options
+      const options = {
+        config: {
+          // Vega-Lite default configuration
+        },
+        init: (view) => {
+          // initialize tooltip handler
+          view.tooltip(new vegaTooltip.Handler().call);
+        },
+        view: {
+          // view constructor options
+          // remove the loader if you don't want to default to vega-datasets!
+          loader: vega.loader({
+            baseURL: "https://cdn.jsdelivr.net/npm/vega-datasets@2/",
+          }),
+          renderer: "canvas",
+        },
+      };
+
+      // register vega and vega-lite with the API
+      vl.register(vega, vegaLite, options);
+
+      // now you can use the API!
+      vl.markBar({ tooltip: true })
+        .data([
+          { a: "A", b: 28 },
+          { a: "B", b: 55 },
+          { a: "C", b: 43 },
+          { a: "D", b: 91 },
+          { a: "E", b: 81 },
+          { a: "F", b: 53 },
+          { a: "G", b: 19 },
+          { a: "H", b: 87 },
+          { a: "I", b: 52 },
+        ])
+        .encode(
+          vl.x().fieldQ("b"),
+          vl.y().fieldN("a"),
+          vl.tooltip([vl.fieldQ("b"), vl.fieldN("a")])
+        )
+        .render()
+        .then((viewElement) => {
+          // render returns a promise to a DOM element containing the chart
+          // viewElement.value contains the Vega View object instance
+          document.getElementById("view").appendChild(viewElement);
+        });
+    </script>
+  </body>
+</html>
