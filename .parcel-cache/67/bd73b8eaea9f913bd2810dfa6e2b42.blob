@@ -1059,7 +1059,7 @@ try {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 5,
       columnNumber: 17
     }
   }), document.querySelector("#root"));
@@ -26274,44 +26274,43 @@ try {
   var _reactDefault = _parcelHelpers.interopDefault(_react);
   var _jsxFileName = "/Users/claytonnovotney/Desktop/UW/Spring2021/Info474/InClass/Info474Week3/src/App.js";
   const App = () => {
-    console.log("Hello world in the console.");
     return (
       /*#__PURE__*/_reactDefault.default.createElement("div", {
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 5,
-          columnNumber: 9
+          lineNumber: 4,
+          columnNumber: 5
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 6,
-          columnNumber: 9
+          lineNumber: 5,
+          columnNumber: 7
         }
       }, "Clayton Novotney"), /*#__PURE__*/_reactDefault.default.createElement("h2", {
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 7,
-          columnNumber: 9
+          lineNumber: 6,
+          columnNumber: 7
         }
       }, "Info 474"), /*#__PURE__*/_reactDefault.default.createElement("h2", {
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8,
-          columnNumber: 9
+          lineNumber: 7,
+          columnNumber: 7
         }
       }, "April 13th, 2021"), /*#__PURE__*/_reactDefault.default.createElement("h4", {
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9,
-          columnNumber: 9
+          lineNumber: 8,
+          columnNumber: 7
         }
-      }, "Hello World Demo With React and Javascript"))
+      }, "Hello World Demo With Javascript"))
     );
   };
   _c = App;
@@ -26525,4 +26524,4 @@ function registerExportsForReactRefresh(module) {
 
 },{"react-refresh/runtime":"592mh"}]},["1j6wU","3Imd1","5rkFb"], "5rkFb", "parcelRequire3ad8")
 
-//# sourceMappingURL=index.3fafb3e2.js.map
+//# sourceMappingURL=index.HASH_REF_0fa2489aa94c8731ee2aee9f3fafb3e2.js.map
